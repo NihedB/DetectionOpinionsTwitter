@@ -21,7 +21,7 @@ Projet réalisé dans le cadre du travail d'étude et de recherche (TER) de L3.
 
 * Schéma explicatif de la méthode utilisée : 
 
-![Optional Text](../master/DetectionOpinionsTwitter/schema_twitter.png)
+ ![img](http://i.imgur.com/schema_twitter.png)
 
 ## Prérequis 
 
