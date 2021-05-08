@@ -21,7 +21,7 @@ Projet réalisé dans le cadre du travail d'étude et de recherche (TER) de L3.
 
 * Schéma explicatif de la méthode utilisée : 
 
-![alt text](https://github.com/NihedB/DetectionOpinionsTwitter/blob/main/schema_twitter.jpg?raw=true)
+![alt text](https://github.com/NihedB/DetectionOpinionsTwitter/blob/main/schema_twitter.png?raw=true)
 
 
 ## Prérequis 
