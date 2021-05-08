@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detection of Twitter opinions </title>
+      
+         <link href="{{ url_for('static', filename='result1.css') }}" rel="stylesheet" type="text/css" />
+       <link rel="shortcut icon" href="static/t.png">
+       <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet"> 
+        <meta charset="utf-8" />
+
+
+    </head>
+
+    <body>
+
+      <header>
+
+          <h1>  Detection of Twitter opinions </h1>
+      </header>
+        
+
+
+    </br>
+
+<div id="global">
+
+<div id="txtpos"> <p style="color: green"> <strong> Dictionnary of positive adjectives </strong></p> </div>
+
+     <div id="positif" >
+        {% for p in positif %}
+          {% if p in positifBis %}
+           <span style="color: #778899">  &nbsp; {{ p }} &nbsp; </span>
+            &nbsp;
+         {% else %}
+          <span style="color: #F08080">  &nbsp; {{ p }}  &nbsp;</span>
+           {% endif %}
+        {% endfor %}
+     
+    </div>
+
+    <div id="txtneg"> <p style="color: red"> <strong> Dictionnary of negative adjectives </strong></p> </div>
+
+    <div id="negatif">
+        {% for n in negatif %} 
+        {% if n in iniNeg %}
+         <span style="color: #778899">   &nbsp;{{ n }} &nbsp; </span>
+             &nbsp;
+          {% else %}
+          <span style="color: #F08080">  &nbsp; {{ n }}  &nbsp; </span>
+             &nbsp;
+        {% endif %}
+        {% endfor %}
+    </div> 
+</div>
+
+<div id="exemple">
+      <h2> Here's some of the tweets we collected: </h2>
+</div>
+  
+      <div id="opinion">
+        <ul>
+        {% for p in opinion %}
+            {% if opinion[p][1]==0 %}
+            <li>{{ opinion[p][0]}} <strong style="color:grey;">  &nbsp; This tweet doesn't express any opinion </strong> </li>
+             {% elif opinion[p][1]==1 %}
+            <li>{{ opinion[p][0]}} <strong style="color:green;"> &nbsp; This tweet expresses a positive opinion </strong> </li> 
+            {% else %}
+            <li>{{ opinion[p][0]}} <strong style="color:red;">  &nbsp; This tweet expresses a negative opinion </strong> </li> 
+              {% endif %}
+            </br>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+  
+
+      <footer>
+        <p>Assarar-Bendahman-Djelouat | TER-L3 Opinions</p>
+    </footer>
+
+    </body>
+    </html>
