@@ -17,10 +17,10 @@ import contractions
 
 
 #les 4 clés pour l'authentification à l'application twitter
-CONSUMER_KEY = "QfLtSEFyni3Mdyd2f5qaLf1LV"
-CONSUMER_SECRET = "vYAbq0ArO2rM28Qhhp6OJexgT3dqdh036FtbZjwsb8EzNvRx7B"
-ACCESS_TOKEN = "1098593592354979840-tqJn9nGRb54Biaf3wlrO5kgfoVKzra"
-ACCESS_TOKEN_SECRET = "FYTtPiQbiLwFTV7XyssvZRK3eiQNNDd4DeCLZnokeKB0Q"
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+ACCESS_TOKEN = ""
+ACCESS_TOKEN_SECRET = ""
 
 
 
